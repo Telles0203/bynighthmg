@@ -8,7 +8,7 @@ body {
     background-color: #121212;
 }
 
-p{
+p {
     text-align: justify;
 }
 
@@ -59,46 +59,49 @@ p{
 
 /* Estilos do link */
 .offcanvas .nav-link {
-  position: relative;
-  padding-left: 1rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: block;
-  padding: 15px; /* Ajuste o padding conforme necessário */
+    position: relative;
+    padding-left: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    padding: 15px;
+    /* Ajuste o padding conforme necessário */
 }
 
 /* Hover no link */
 .offcanvas .nav-link:hover {
-  background-color: #1c1c1c !important;
-  color: #ff4c4c !important;
-  transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #1c1c1c !important;
+    color: #ff4c4c !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Adiciona uma linha à esquerda do link */
 .offcanvas .nav-link::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 20%;
-  bottom: 20%;
-  width: 5px;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 20%;
+    width: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
 
 /* Exibe a linha vermelha ao passar o mouse */
 .offcanvas .nav-link:hover::before {
-  background-color: #ff4c4c !important;
+    background-color: #ff4c4c !important;
 }
 
 /* Faz com que a linha permaneça no foco (quando o link é clicado) */
 .offcanvas .nav-link:focus::before {
-  background-color: #ff4c4c !important;
+    background-color: #ff4c4c !important;
 }
 
-  
-  
-  
-  
+
+
+.card-transparent{
+    background-color: rgba(245, 245, 245, 0.6);
+}
+
 
 .text-blood {
     font-family: 'Cinzel', serif;
@@ -119,13 +122,47 @@ p{
     cursor: pointer;
 }
 
+.text-smoke{
+    color:#3c0000;
+}
+
+.btn-blood {
+    color: #fff;
+    background-color: #3c0000;
+    border: 1px solid #2a0000;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .btn-blood:hover {
+    background-color: #5a0000;
+    border-color: #3c0000;
+    color: #ffdddd;
+  }
+  
+  .btn-blood:focus {
+    box-shadow: 0 0 0 0.25rem rgba(60, 0, 0, 0.5);
+  }
+  
+  .btn-blood:disabled {
+    background-color: #3c0000;
+    border-color: #2a0000;
+    opacity: 0.65;
+  }
+  
+  
+
+
+
+
+
 .footer-fixed {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 1030; /* acima do conteúdo, abaixo da navbar */
-  }
+    z-index: 1030;
+    /* acima do conteúdo, abaixo da navbar */
+}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .content-conteiner {
@@ -143,4 +180,4 @@ p{
     .content-conteiner {
         width: 95vw;
     }
-  }
+}
