@@ -39,9 +39,6 @@
 
 
 
-
-
-
 .navbar-toggler-icon {
   background-color: #222; 
 }
@@ -85,8 +82,6 @@
 
 
 
-
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -95,8 +90,6 @@
     transform: rotate(360deg);
   }
 }
-
-
 
 @media (max-width: 480px) {
   #root {
